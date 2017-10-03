@@ -1,0 +1,157 @@
+.headn{
+      width:60%;
+     color:white;
+     text-align: center;
+     font-family: 'Segoe UI';
+     font-size: 25;
+ }
+ .buth:hover{
+     background: #525452;
+   }
+.head{
+    top:0;
+    left:0;
+    position: fixed;
+    width:100%;
+    height:10%;
+    background-color: black;
+    z-index:100;
+}
+ .buttonhead{
+     width:40%;
+ }
+ .table{
+    width:100%;
+    height: 100%;
+ }
+ .buth{
+     background-color: black;
+     border:none;
+     color:white;
+     font-size:20;
+     font-family: 'Segoe UI';
+ }
+ .name{
+     color: white;
+      width:100%;
+     font-family: 'Segoe UI';
+     border-radius: 20px;
+     opacity:0.9;
+ }
+ .main{
+    color: #000000;
+    font-size: 20;
+    font-family: 'Segoe UI';
+    background-color: white;
+    border-radius: 20px;
+    opacity:0.97;
+  }
+  .dir{
+      border:none;
+      width:50%;
+	  background-color:Transparent;
+  }
+  .dot{
+    border-radius:30%;
+    background-color:black;
+    font-size:12;
+    color:white;
+    border:none;
+    font-family:'Segoe UI';
+  }
+  .par1{
+    background-image:url(lap.jpg);
+    background-size:100% 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width:100%;
+	height:600;
+}
+.par2{
+    background-image:url(car.jpg);
+    background-size:100% 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width:100%;
+	height:600;
+}
+.par3{
+    background-image:url(paris.jpg);
+    background-size:100% 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width:100%;
+	height:600;
+}
+ h1{
+	 font-family:'Segoe UI';
+ }	 
+ h2{
+	 font-family:'Segoe UI';
+	 color:white;
+	 text-align:center;
+ }
+.part{
+	font-family:'Segoe UI';
+	color:white;
+	font-size:70;
+}	
+.am{
+	font-size:25;
+	font-family:Segoe UI;
+	color:white;
+	text-align:center;
+}
+.con{
+	font-size:25;
+	font-family:Segoe UI;
+	color:white;
+	text-align:center;
+}
+.amp{
+	width:99%;
+}
+.cm{
+	background-color:#1A8CFF;
+	height:7%;
+	border-radius:10%;
+	border:none;
+	color:white;
+	font-size:20;
+}
+.cm:hover{
+ background-color:orange;
+	height:7%;
+	border-radius:10%;
+	border:none;
+	color:white;
+	font-size:20;	
+}
+span{
+	font-family:Segoe UI;
+	font-size:45;
+	color:white;
+}
+.foot{
+	background-image:url(foot.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	width:100%;
+	font-family:Segoe UI;
+	font-size:25;
+	color:black;
+}
+.school{
+	border:none;
+	background-color:BLACK;
+	color:white;
+	border-radius:10%;
+	font-family:Segoe UI;
+	font-size:20;
+}
