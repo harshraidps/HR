@@ -1,4 +1,4 @@
-<script> 
+
 var slideIndex =1;
         showSlides(slideIndex);
         
@@ -25,4 +25,4 @@ var slideIndex =1;
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
         }
-</script>
+
