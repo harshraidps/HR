@@ -4,14 +4,20 @@
 	<script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.css"/>
+	<link rel="stylesheet" href="loader.css"/>
 </head>
-<body background="final.png.jpg" style="background-attachment:fixed">
+<body onload="myFunction()" style="margin:0;" background="final.png.jpg" style="background-attachment:fixed">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="sweetalert.min.js">
-	sweetAlert("hello");
 </script>
     <link rel="stylesheet" href="CSS.css"/>
-    <link rel="javascript" href="AEA.js"/>
+
+	<div id="preloader">
+  <div id="loader"></div>
+</div>
+	
+	
+	<div style="display:none;" id="myDiv" class="animate-bottom">
     <table class="table">
        <tr>
             <td>
@@ -218,7 +224,7 @@ From last few years of my beautiful life I tried to achieve success in olympiads
 		</td>
 		<td><h4>
 		PLEASE FOLLOW ME:&nbsp;&nbsp;
-		<a href="https://plus.google.com/103906881518850746625">
+		<a href="">
 		<img src="g+.png" width="25" height="25"/><br/><br/>
 		</a>
 		GIVE YOUR SUPPORT BY MAILING ME.<br/>
@@ -281,8 +287,26 @@ function topFunction() {
 				
 		 }
     </script>
+	
+	
+	
+	
+
 		<button onclick="topFunction()" id="myBtn">
 			<img src="up.png" width="30" height="30"/>
-		</button> 
+		</button>
+	
+		<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 </body>
 </html>
