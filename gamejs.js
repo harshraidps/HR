@@ -203,7 +203,7 @@ alert("win Player 1: "+player1);
 else if(b2==2 && b5==5 && b8==8){
 alert("win Player 1: "+player1);
 }
-else if(b2==3 && b5==5 && b8==6){
+else if(b4==4 && b5==5 && b6==6){
 alert("win Player 1: "+player1);
 }
 
@@ -228,7 +228,7 @@ alert("win Player 2: "+player2);
 else  if(b2==-2 && b5==-5 && b8==-8){
 alert("win Player 2: "+player2);
 }
-else if(b2==-3 && b5==-5 && b8==-6){
+else if(b4==-4 && b5==-5 && b6==-6){
 alert("win Player 2: "+player2);
 }
 
