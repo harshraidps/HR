@@ -253,7 +253,7 @@ function winRef() {
 	
 }
 function winRefTotal(){
-    location.replace('file:///G:/3t%20ButtonRefresh/game(unbutton).html ');
+    location.replace('https://harshraidps.github.io/hr/game3t.html');
 }
 function ChangeToX(){
 	if(bcc==1){}
