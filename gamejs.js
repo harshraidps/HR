@@ -1,6 +1,8 @@
 var play=1;
 var click1,click2,click3,click4,click5,click6,click7,click8,click9;
 var b1=0,b2=0,b3=0,b4=0,b5=0,b6=0,b7=0,b8=0,b9=0;
+var bcc=0;
+var bccc=0;
 var player1,player2;
 function name(){
 player1=prompt("Enter the name of Player with CROSS as a Symbol");
@@ -181,56 +183,98 @@ if(b1==-1 && b2==-2 && b3==-3)
  }	
 }
 function win(){
-	go();
+	go();bccChange();
 if(b1==1 && b2==2 && b3==3){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b1==1 && b5==5 && b9==9){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b3==3 && b5==5 && b7==7){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b1==1 && b4==4 && b7==7){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b3==3 && b6==6 && b9==9){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b7==7 && b8==8 && b9==9){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b2==2 && b5==5 && b8==8){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 else if(b4==4 && b5==5 && b6==6){
-alert("win Player 1: "+player1);
+alert("win X: "+player1);winRef();
 }
 
 else if(b1==-1 && b2==-2 && b3==-3){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
 }
 else if(b1==-1 && b5==-5 && b9==-9){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
 }
 else if(b3==-3 && b5==-5 && b7==-7){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
 }
 else if(b1==-1 && b4==-4 && b7==-7){
-alert("win Player 2");
+alert("win O:"+player2);winRef();
 }
 else if(b3==-3 && b6==-6 && b9==-9){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
 }
 else if(b7==-7 && b8==-8 && b9==-9){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
 }
 else  if(b2==-2 && b5==-5 && b8==-8){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
 }
 else if(b4==-4 && b5==-5 && b6==-6){
-alert("win Player 2: "+player2);
+alert("win O:"+player2);winRef();
+}
+}
+function winRef() {
+	alert("GAME IS GOING TO RESTART");
+    document.getElementById('1').src = 'def.jpg';
+    document.getElementById('2').src = 'def.jpg';
+    document.getElementById('3').src = 'def.jpg';
+    document.getElementById('4').src = 'def.jpg';
+    document.getElementById('5').src = 'def.jpg';
+    document.getElementById('6').src = 'def.jpg';
+    document.getElementById('7').src = 'def.jpg';
+    document.getElementById('8').src = 'def.jpg';
+    document.getElementById('9').src = 'def.jpg';
+	document.getElementById("cbo").style.backgroundColor='white'
+	document.getElementById("cbx").style.backgroundColor='white';
+	play=1;
+	b1=0,b2=0,b3=0,b4=0,b5=0,b6=0,b7=0,b8=0,b9=0;
+	click1=0,click2=0,click3=0,click4=0,click5=0,click6=0,click7=0,click8=0,click9=0,bcc=0,bccc=0;
+	
+}
+function winRefTotal(){
+    location.replace('file:///G:/3t%20ButtonRefresh/game(unbutton).html ');
+}
+function ChangeToX(){
+	if(bcc==1){}
+	else{
+	play=1;	
+		document.getElementById("cbx").style.backgroundColor='red';
+	document.getElementById("cbo").style.backgroundColor='white';
+	}
+	
+}
+function ChangeToO(){
+	if(bcc==1){}
+	else{
+	play=2;	
+	document.getElementById("cbo").style.backgroundColor='red';
+	document.getElementById("cbx").style.backgroundColor='white';
+	}
 }
 
+function bccChange(){
+if(bccc!=1){bcc=1;bccc=1;}
 }
+
 
