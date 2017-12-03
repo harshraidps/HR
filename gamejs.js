@@ -6,7 +6,8 @@ var bccc=0;
 var player1,player2;
 function name(){
 player1=prompt("Enter the name of Player with CROSS as a Symbol");
-player2=prompt("Enter the name of Player with ZERO as a Symbol");alert("Landscape view will be better");
+player2=prompt("Enter the name of Player with ZERO as a Symbol");
+	alert("Landscape view will be better");
 	
 }
 function button1(){
