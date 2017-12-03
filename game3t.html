@@ -1,31 +1,62 @@
 <html>
 <head>
     <style>
-        .button1{
-            width:90%;
-            height:80px;
-            border:none;
-        }
-        .button2{
-            width:90%;
-            height:80px;
-            border:none;
-        }
+       
         .def{
             width:150px;
             height:150px;
         }
+		.button{
+		border:none;
+		font-family:Segoe UI;
+		border-radius:10px;
+		}
+		.button:hover{
+		background-color:#3D97CD;
+		color:white;
+		transition:0.5s;
+		}
+		.hr:hover{
+		background-color:#4D27bD;
+		}
     </style>
 	<link rel="shortcut icon" href="logot3.png"/>
-	<title>TIC TAC TOE</title>
 </head>
-<body bgcolor="green" onload="name()">
-<table width="100%"  height="100%">
+<body background="build.jpg" onload="name()">
+<table width="80%"  align="center" height="100%" >
+<tr>
+<td class="hr" width="5%">
+<a href="harshraidps.github.io/hr">
+<center>
+<img  src="hr.png" width="60px" height="60px"/></center>
+</a>
+</td>
+<td bgcolor="black" width="90%">
+<marquee behavior="alternate" hspace="100"><font style="font-size:50px;color:white;font-family:Segoe UI">TIC TAC TOE</font></marquee>
+</td>
+<td class="hr" width="10%">
+<a href="harshraidps.github.io/hr">
+<center><img  src="hr.png" width="60px" height="60px"/></center>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%">
 <tr>
 <td>
 <center>
+    <button class="button" onclick="winRef()">REFRESH<br/>(only Arena)</button><br/><br/>
+        <button class="button" onclick="winRefTotal()">REFRESH<br/>(Total)</button>
+		</center>
+</td>
+</tr>
+</table>
+</td>
+<td>
+<center>
 <table WIDTH="500px"  cellspacing="10">
-    <marquee behavior="alternate" hspace="100"><font style="font-size:50px">TIC TAC TOE</font></marquee>
+    
     <tr>
         <td><img onclick="button1()" class="def" id="1" src="def.jpg"</td>
         <td><img onclick="button2()" class="def"id="2" src="def.jpg"</td>
@@ -42,7 +73,22 @@
         <td><img onclick="button9()" class="def" id="9" src="def.jpg"</td>
     </tr>
 </table>
+    <center>
+        
+		
 </center>
+</td>
+<td>
+<table width="100%">
+<tr>
+<td>
+   <center>
+		<button class="button" id="cbx" onclick="ChangeToX()">Choose X First</button><br/><br/>
+		<button class="button" id="cbo" onclick="ChangeToO()">Choose O First</button>
+    </center>
+</td>
+</tr>
+</table>
 </td>
 </tr>
 </table>
