@@ -3,10 +3,12 @@ var click1,click2,click3,click4,click5,click6,click7,click8,click9;
 var b1=0,b2=0,b3=0,b4=0,b5=0,b6=0,b7=0,b8=0,b9=0;
 var bcc=0;
 var bccc=0;
-var player1="PLAYED WELL",player2=" PLAYED WELL";
-
-	
-	
+var player1,player2;
+alert("Copyright HR Industries , If you are Smartphone user Landscpae view will be better");
+function name(){
+player1=prompt("Enter the name of Player with CROSS as a Symbol");
+player2=prompt("Enter the name of Player with ZERO as a Symbol");
+}	
 function button1(){
 if(click1>=1){return;}
 else{ 
