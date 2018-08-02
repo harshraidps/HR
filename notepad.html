@@ -169,7 +169,7 @@ function openNotepad(){
                     document.getElementById("opennotepadBody").style.display = "none";
 	}
 function newNotepad(){
-   document.getElementById("textAreaCell").innerHTML="<textarea id='textArea' style='border: none;width:40rem; height:30rem;'></textarea>";
+   document.getElementById("textAreaCell").innerHTML="<textarea id='textArea' style=' resize: none;border: none;width:40rem; height:30rem;'></textarea>";
    save=0;
     document.getElementById('saveNotepad').innerHTML="Save as";
  }
@@ -186,13 +186,12 @@ else{
 }
 }
 function fontSize(){
-	var size;
-	size=prompt("Enter the text size between o-72: ");
-	document.getElementById("textArea").style.fontSize = size;
-	}
-	function font1(){
-		alert("hello");
-	}
+	size=prompt("Enter the text size between 10-72: ");
+	 if(size==null){return;}	 
+	 else if(size<10 || size>72){
+	 	fontSize();
+	 }
+    document.getElementById("textArea").style.fontSize = size;}
 	</script>
 	<style>
 #mydiv {
