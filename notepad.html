@@ -1,0 +1,343 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<title>Notepad</title>
+</head>
+<style>
+.NotepadButton:hover {
+	background-color: #ccf5ff;
+	border:1px solid #00b8e6;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+body {overflow: hidden; 
+font-family: 'Roboto Condensed', sans-serif;
+background-color: black;}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size:12px
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.NotepadButton{
+	border:1px solid transparent;
+	background-color:transparent;
+}
+.NotepadButton:hover {
+	background-color: #ccf5ff;
+	border:1px solid #00b8e6;
+}
+.NotepadCell{
+    border: 2px solid;
+}
+.close{
+	background-color: red;
+	border: none;
+	color:white;
+}
+.dropdownButton{
+border:none;
+background-color:white;
+width:60px;
+}
+.dropdownButton:hover{
+background-color:grey;
+}
+#textArea{
+    resize: both;
+    overflow: auto;
+}
+#notepad{
+-webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */	
+}
+</style>
+<div id='notepad'>
+	<div id="mydiv">
+		<div id="mydivheader">
+			<table style='border:1px solid;background-color: #A9A9A9;opacity:50%; width:100%;height:15px;'>
+				<tr>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+<table id='notepadBody'  style='border:1px solid; width:99.7%; height:70.1%;background-color: #d9d9d9'>
+<tr>
+	
+<td class='TopMenuBar' style='width:10%'>&nbsp;&nbsp;Notepad</td>
+<td class='TopMenuBar' style='width:70%'></td>
+<td class='TopMenuBar' style='width:20%; text-align: right;'>
+<button id='closeNotepad' onclick='minimizeNotepad()'>-</button>
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<button id='closeNotepad'  onclick='closeNotepad()'> X</button>
+</td>
+</tr>
+<tr>
+	<td class='TopMenuBar' style='width:300px;' colspan='3'>
+		<div class='dropdown'>
+  <button class='NotepadButton'>File</button>
+  <div class='dropdown-content'>
+    <button class='dropdownButton' id='newNotepad' onclick='newNotepad()'>New</button>
+<button  class='dropdownButton'  id='saveNotepad' onclick='saveNotepad()'>Save as</button>
+  </div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class='dropdown'>
+  <button class='NotepadButton'>Format</button>
+  <div class='dropdown-content'>
+    <div class="container">
+                                 
+  <div class="dropdown">
+ <button class='dropdownButton' id='FontSize' onclick='fontSize()' type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Font Size
+    </button>
+  </div>
+</div>
+    <div class="container">
+                                 
+  <div class="dropdown">
+ <button type="button" class='dropdownButton' onclick="NotepadOn()"  data-toggle="dropdown">
+      Font Family
+    </button>
+  </div>
+</div>
+  </div>
+</div>
+
+</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<button class='NotepadButton'>Help</button>
+    </td>
+</tr>
+<tr >
+	<td id='textAreaCell' class='NotepadCell'  colspan='3'>
+		<textarea   id='textArea' style=' resize: none;border: none;width:40rem; height:30rem;'></textarea>
+	</td>
+</tr>
+</table>
+<div id="mydivheader2">
+			<table style='border:1px solid;background-color: #A9A9A9;opacity:50%; width:100%;height:15px;'>
+				<tr>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+</div>
+</div>
+<button style='display:none' id='opennotepadBody'onclick='openNotepad()'>OPEN NOTEPAD</button>
+</div>
+<script>
+var MaximizeTime=1;
+var save;
+var name;
+	function closeNotepad(){
+                    document.getElementById("notepadBody").style.display = "none";
+                    document.getElementById("mydivheader").style.display = "none";
+                    document.getElementById("mydivheader2").style.display = "none";
+	}
+	function minimizeNotepad(){
+		 document.getElementById("notepadBody").style.display = "none";
+		 document.getElementById("mydivheader").style.display = "none";
+		 document.getElementById("mydivheader2").style.display = "none";
+		  document.getElementById("opennotepadBody").style.display = "block";
+	}
+function openNotepad(){
+                    document.getElementById("notepadBody").style.display = "block";
+                    document.getElementById("mydivheader").style.display = "block";
+                    document.getElementById("mydivheader2").style.display = "block";
+                    document.getElementById("opennotepadBody").style.display = "none";
+	}
+function newNotepad(){
+   document.getElementById("textAreaCell").innerHTML="<textarea id='textArea' style='border: none;width:40rem; height:30rem;'></textarea>";
+   save=0;
+    document.getElementById('saveNotepad').innerHTML="Save as";
+ }
+function saveNotepad(){
+if(save==1){
+   alert(name+".txt is saved");
+}
+else{
+	document.getElementById('saveNotepad').innerHTML="Save";
+   name=prompt("Enter the file name: [no extension]");
+   alert(name+".txt is saved");
+    save=1;
+    
+}
+}
+function fontSize(){
+	var size;
+	size=prompt("Enter the text size between o-72: ");
+	document.getElementById("textArea").style.fontSize = size;
+	}
+	function font1(){
+		alert("hello");
+	}
+	</script>
+	<style>
+#mydiv {
+    position: absolute;
+    z-index: 9;
+}
+
+#mydivheader {
+    z-index: 10;
+}
+</style>
+
+ 
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+   if (document.getElementById(elmnt.id + "header2")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header2").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<script >
+	  $(document).ready(function() {
+       //Call a variable to know the width of the window
+       var screenWidth = $(window).width();
+       $('notepad').css('width', screenWidth-20 + 'px');
+    });
+</script>
+<style>
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 120;
+    cursor: pointer;
+}
+#fontFaceChanger{
+	border-width: 5px solid #000;
+border-spacing: 0px;
+border-style: outset;
+border-color: black;
+border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<div id="overlay" onclick="NotepadOff()">
+  <table  id="fontFaceChanger" bgcolor="white" style="  position: fixed;  top: 50%;  left: 50%; text-align: center; margin-top: -50px;  margin-left: -100px;">
+  	<tr>
+  		<td>SELECT THE FONT FAMILY</td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="changeToComic()">Comic Sans MS</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="changeToSegoe()">Segoe Script</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="changeToCopperplate()">Copperplate Gothic</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="changeToHarlow()">Harlow Solid</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="changeToFootlight()">Footlight MT</button></td>
+  	</tr>
+  </table>
+</div>
+<script>
+function NotepadOn() {
+    document.getElementById("overlay").style.display = "block";
+
+}
+
+function NotepadOff() {
+    document.getElementById("overlay").style.display = "none";
+}
+function changeToComic(){
+	document.getElementById("textArea").style.fontFamily= "Comic Sans MS";
+}
+function changeToSegoe(){
+	document.getElementById("textArea").style.fontFamily= "Segoe Script";
+}
+function changeToCopperplate(){
+	document.getElementById("textArea").style.fontFamily= "Copperplate Gothic";
+}
+function changeToFootlight(){
+	document.getElementById("textArea").style.fontFamily= "Footlight MT";
+}
+function changeToHarlow(){
+	document.getElementById("textArea").style.fontFamily= "Harlow Solid";
+}
+</script>
+
+
+</body>
+</html>
