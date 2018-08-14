@@ -1,482 +1,286 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>
-      HARSH RAI
-    </title>
-    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity=
-    "sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous" type="text/javascript">
+<html>
+<head>
+  <title>HARSH RAI</title>
+	<script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.css"/>
+	<link rel="stylesheet" href="loader.css"/>
+	<link rel="shortcut icon" href="hr.png">
+	 <link rel="stylesheet" href="animate.css">
+</head>
+<body onload="myFunction()" style="margin:0;background-attachment:fixed" background="final.png.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="sweetalert.min.js">
 </script>
-    <script src=
-    "https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.js"
-    type="text/javascript">
-</script>
-    <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.css"
-    type="text/css" />
-    <link rel="stylesheet" href="loader.css" type="text/css" />
-    <link rel="shortcut icon" href="hr.png" />
-    <link rel="stylesheet" href="animate.css" type="text/css" />
-    <meta name="viewport" content=
-    "width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="CSS.css" type="text/css" />
-    <style type="text/css">
-/*<![CDATA[*/
-                #HRpreloader{
-                        poisiton:fixed;
-                        top:70%;
-                        left:45%;
-                }
-    /*]]>*/
-    </style>
-  </head>
-  <body onload="myFunction()" style=
-  "margin:0;background-attachment:fixed" background=
-  "final.png.jpg">
-    <script src="sweetalert.min.js" type="text/javascript">
-</script>
-    <div id="preloader">
-      <div id="loader">
-        /div&gt;
-      </div>
-      <div style="display:none;" id="myDiv" class="animate-bottom">
-        <br />
-        <br />
-        <table class="table">
-          <tr>
+    <link rel="stylesheet" href="CSS.css"/>
+	<style>
+		#HRpreloader{
+			 position:fixed;
+                          bottom:30%;
+left:45%;
+ font-size: 40px;
+z-index:-0.5;
+		}
+	</style>
+   <div id="HRpreloader" class="animated infinite flip">HR</div>
+
+	<div id="preloader">
+  <div id="loader"></div>
+</div>
+	
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+    <table class="table">
+       <tr>
             <td>
-              <table class="head">
-                <tr>
-                  <td class="headn">
-                    <div class="animated infinite pulse">
-                      HARSH RAI
-                    </div>
-                  </td>
-                  <td class="buttonhead">
-                    <center>
-                      <button class=
-                      "buth">HOME</button>&nbsp;&nbsp; <a href=
-                      "game3t.html" style=
-                      "text-decoration:none;font-color:white"><button class="buth">
-                      <a href="game3t.html" style=
-                      "text-decoration:none;font-color:white"></a><a href="game3t.html"
-                      style=
-                      "text-decoration:none;font-color:white"></a>
-                      <a href="game3t.html" style=
-                      "text-decoration:none;font-color:white"><font color="white">
-                      TIC TAC TOE</font></a> <a href="notepad.html"
-                      style=
-                      "text-decoration:none;font-color:white"><button class="buth">
-                      <a href="notepad.html" style=
-                      "text-decoration:none;font-color:white"></a><a href="notepad.html"
-                      style=
-                      "text-decoration:none;font-color:white"></a>
-                      <a href="notepad.html" style=
-                      "text-decoration:none;font-color:white"><font color="white">
-                      NOTEPAD</font></a></button></a></button></a>
-                    </center>
-                  </td>
-                </tr>
-              </table>
-              <center>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div class="name">
-                  <img src="MyPic.jpg" width="200" height="250"
-                  style="border-radius: 50%;" /><br />
-                  <br />
-                  <br />
-                  <br />
-                  <div class="animated jackInTheBox delay-1s">
-                    <div class="animated infinite bounce">
-                      <font style="font-size: 60">HARSH RAI</font>
-                    </div><br />
-                    <font style="font-size: 40">WEB DESIGNER AND
-                    PROGRAMMER</font>
-                  </div>
-                </div><br />
-                <br />
-              </center>
+                <table class="head">
+									
+                      <tr>
+             <td class="headn">
+		     <div class="animated infinite pulse">HARSH RAI</div>
             </td>
-          </tr>
-          <tr width="60%">
+            <td class="buttonhead">
+                <center>
+               <button class="buth">HOME</button>&nbsp;&nbsp;
+			<a href="game3t.html" style="text-decoration:none;font-color:white"><button class="buth"><font color="white">TIC TAC TOE</font></button> </a>
+                        <a href="notepad.html" style="text-decoration:none;font-color:white"><button class="buth"><font color="white">NOTEPAD</font></button> </a>
+ 		    </center>          
+            </td>
+                   </tr>
+                </table>
+               
+               <center>
+                    <BR/><BR/><BR/><BR/><BR/><BR/><BR/><BR/><BR/>
+										<BR/><BR/><BR/>
+                   <div class="name">
+										<img src="MyPic.jpg" width="200" height="250" style="border-radius: 50%;"/>
+										<br/><br/><br/><br/>
+			   <div class="animated jackInTheBox delay-1s">
+			   <font style="font-size: 60"><div class="animated infinite bounce">HARSH RAI</div></font><br/>
+                        <font style="font-size: 40">WEB DESIGNER AND PROGRAMMER</font>
+			   </div>
+												
+												
+									      </div>
+												<br/><br/>
+                   </div>
+                   
+				   <BR/><BR/>
+            </center>
+                </td> 
+        </tr>
+        <tr  width="60%">
             <td width="60%" class="main">
-              <center>
-                <table class="main" width="100%">
-                  <tr>
-                    <td width="10%">
-                      <center>
-                        <button class="dir" onclick=
-                        "plusSlides(-1)"><img src="left.png" width=
-                        "100%" height="60%" /></button>
-                      </center>
-                    </td>
-                    <td class="main" width="60%" id="kw">
-                      <font><br /></font>
-                      <div class="mySlides fade">
-                        <div class="numbertext">
-                          <h1>
-                            <font>ABOUT ME</font>
-                          </h1>
-                        </div><font><script type="text/javascript">
-//<![CDATA[
-                                                                                                                
-                        swal({
-                        title: 'What is your name?',
-                        input: 'text',
-                        inputPlaceholder: 'Enter your name or nickname',
-                        showCancelButton: true,
-                        inputValidator: function (value) {
-                        return new Promise(function (resolve, reject) {
-                        if (value) {
-                        resolve()
-                        } else {
-                        reject('You need to write something!')
-                        }
-                        })
-                        }
-                        }).then(function (name) {
-                        swal({
-                        type: 'success',
-                        title: 'Hi, ' + name
-                        })
-                        })
-                        document.write("HI!")
-                        //]]>
-                        </script><br />
-                        <br />
-                        I am a student at DPS Bokaro. I love to
-                        carve products out of ideas. I am in 8th
-                        standard and have worked with several
-                        programming languages. I think that web is
-                        one of the most powerful tools to create
-                        services . I as a web developer and
-                        programmer, hope to make it even better by
-                        creating beautiful designs and efficient
-                        solutions to abolish common problems
-                        happening in day to day life.</font>
-                        <p align="center">
-                          <font><button class="dot" id="1" onclick=
-                          "plusSlides(+1)"><font><font>SLIDE
-                          CHANGE</font>
-                          &nbsp;</font></button></font>
-                        </p>
-                      </div>
-                      <div class="mySlides fade">
-                        <div class="numbertext">
-                          <h1>
-                            EXPERIENCE
-                          </h1>
+                <center>   
+            <table class="main" width="100%">
+                <tr>
+                    <td width="10%"><center><button class="dir" onclick="plusSlides(-1)">
+                    <img src="left.png" width=100% height=60%/></button></center> </td>
+                    <td class="main" width=60% id="kw">
+               <font>
+			   <br/>
+				<div class="mySlides fade">
+	                     <div class="numbertext"><h1>ABOUT ME</h1></div>
+                        <script>
+														
+swal({
+  title: 'What is your name?',
+  input: 'text',
+  inputPlaceholder: 'Enter your name or nickname',
+  showCancelButton: true,
+  inputValidator: function (value) {
+    return new Promise(function (resolve, reject) {
+      if (value) {
+        resolve()
+      } else {
+        reject('You need to write something!')
+      }
+    })
+  }
+}).then(function (name) {
+  swal({
+    type: 'success',
+    title: 'Hi, ' + name
+  })
+})
+document.write("HI!")
+												</script>
+				<br/><br/>
+				I am a student at DPS Bokaro. I love to carve products out of ideas.
+				I am in 8th standard and have worked with several programming languages. I think that web is one of the most powerful tools to create services .
+				I as a web developer and programmer, hope to make it even better by creating beautiful designs and efficient solutions to  
+				abolish common problems happening in day to day life.
+				<p align="center">
+					<button class="dot" id="1" onclick="plusSlides(+1)">SLIDE CHANGE
+					</button>&nbsp;
+				</p>
+                            </div>
+				<div class="mySlides fade">
+	                     <div class="numbertext"><h1>EXPERIENCE</h1></div>
+               	<P><h3>SPANDAN- a live exhibition</h3></P>
+				I represented IT Department of my school in front of IAS officer / DC.
+A created a project (Documentary with help of certain programming languages) to reduce space debris which are very harmful to our Earth and we are responsible for it. 
+				<P><h3>WIZCOM</h3></P>
+It is a team of our school in which students turn ideas into reality through programming languages 
+like C, C++ and JAVA.
+				<P><h3>ROBOTICS LAB</h3></P>
+It is a team of our school in which students turn ideas into reality through programming languages 
+like C, C++ and JAVA.
+				<p align="center">
+					<button class="dot" id="1" onclick="plusSlides(+1)">SLIDE CHANGE
+					</button>&nbsp;
+				</p>
                         </div>
-                        <h3>
-                          SPANDAN- a live exhibition
-                        </h3>I represented IT Department of my
-                        school in front of IAS officer / DC. A
-                        created a project (Documentary with help of
-                        certain programming languages) to reduce
-                        space debris which are very harmful to our
-                        Earth and we are responsible for it.
-                        <h3>
-                          WIZCOM
-                        </h3>It is a team of our school in which
-                        students turn ideas into reality through
-                        programming languages like C, C++ and JAVA.
-                        <h3>
-                          ROBOTICS LAB
-                        </h3>It is a team of our school in which
-                        students turn ideas into reality through
-                        programming languages like C, C++ and JAVA.
-                        <p align="center">
-                          <button class="dot" id="1" onclick=
-                          "plusSlides(+1)">SLIDE CHANGE</button>
-                          &nbsp;
-                        </p>
-                      </div>
-                      <div class="mySlides fade">
-                        <div class="numbertext">
-                          <h1>
-                            ACADEMICS
-                          </h1>
+				<div class="mySlides fade">
+	                     <div class="numbertext"><h1>ACADEMICS</h1></div>
+						 
+               	<P><h3>CLASS TOPPER</h3></P>
+				It is a team of our school in which students turn ideas into reality through programming languages 
+like C, C++ and JAVA.
+				<P><h3>OLYMPIAD SCORER</h3></P>
+From last few years of my beautiful life I tried to achieve success in olympiads and today I  have 8 medals.
+                <P><h3>FAVOURITE SUBJECTS</h3></P>
+				My favourite subjects are Mathematics, Computer, German, Physics and Chemistry. My main aim is to be an IITian.
+				<p align="center">
+					<button class="dot" id="1" onclick="plusSlides(+1)">SLIDE CHANGE
+					</button>&nbsp;
+				</p>
                         </div>
-                        <h3>
-                          CLASS TOPPER
-                        </h3>It is a team of our school in which
-                        students turn ideas into reality through
-                        programming languages like C, C++ and JAVA.
-                        <h3>
-                          OLYMPIAD SCORER
-                        </h3>From last few years of my beautiful
-                        life I tried to achieve success in
-                        olympiads and today I have 8 medals.
-                        <h3>
-                          FAVOURITE SUBJECTS
-                        </h3>My favourite subjects are Mathematics,
-                        Computer, German, Physics and Chemistry. My
-                        main aim is to be an IITian.
-                        <p align="center">
-                          <button class="dot" id="1" onclick=
-                          "plusSlides(+1)">SLIDE CHANGE</button>
-                          &nbsp;
-                        </p>
-                      </div>
-                    </td>
-                    <td width="10%">
-                      <center>
-                        <button class="dir" onclick=
-                        "plusSlides(+1)"><img src="right.png"
-                        width="100%" height="60%" /></button>
-                      </center>
-                    </td>
-                  </tr>
-                </table>
-              </center>
+               </font>
             </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="par1">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <center>
-                  <div style="background-color:black; width:90%;">
-                    <font class="part">CODING IS MY PASSION</font>
-                  </div>
-                </center>
-              </div>
-              <div class="skill" style="color:white">
-                <center>
-                  <h1 style="font-size:50">
-                    SKILLS
-                  </h1>
-                </center><br />
-                <table width="100%">
-                  <tr>
-                    <td width="50%">
-                      <h2>
-                        C
-                      </h2>
-                      <p align="center">
-                        <img src="c.jpg" width="80%" height=
-                        "90%" />
-                      </p><br />
-                    </td>
-                    <td width="50%">
-                      <h2>
-                        HTML
-                      </h2>
-                      <p align="center">
-                        <img src="html.png" width="70%" height=
-                        "90%" />
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h2>
-                        C++
-                      </h2>
-                      <p align="center">
-                        <img src="c++.png" width="75%" height=
-                        "100%" />
-                      </p>
-                    </td>
-                    <td>
-                      <h2>
-                        CSS
-                      </h2>
-                      <p align="center">
-                        <img src="css.png" width="70%" height=
-                        "100%" />
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h2>
-                        JAVA
-                      </h2>
-                      <p align="center">
-                        <img src="java.png" width="70%" height=
-                        "100%" />
-                      </p><br />
-                    </td>
-                    <td>
-                      <h2>
-                        JAVASCRIPT
-                      </h2>
-                      <p align="center">
-                        <img src="js.jpg" width="60%" height=
-                        "90%" />
-                      </p><br />
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="par2">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <center>
-                  <div style="background-color:black; width:93%;">
-                    <font class="part" style="font-size:50">I DO MY
-                    WORK WITH PERFECTION</font>
-                  </div>
-                </center>
-              </div>
-              <div>
-                <table width="100%" cellspacing="20">
-                  <tr>
-                    <td class="am" width="50%">
-                      <h1 style="font-size:40">
-                        ABOUT ME
-                      </h1>
-                      <center>
-                        <p class="amp">
-                          <font>NAME:&nbsp;&nbsp;HARSH RAI<br />
-                          SCHOOL:&nbsp;&nbsp;DPS<br />
-                          E-MAIL ID for contact:&nbsp;&nbsp;<br />
-                          hrai1942@gmail.com<br />
-                          harshrai.dps@gmail.com</font>
-                        </p>
-                      </center>
-                      <p>
-                        <a href="#kw"><button class="buth"><a href=
-                        "#kw"></a><a href="#kw"></a><a href=
-                        "#kw">WANT TO KNOW MORE..</a></button></a>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr width="90%">
-                    <td class="con">
-                      <h1 style="font-size:40">
-                        CONTACT ME
-                      </h1>Please! contact me by doing mail and
-                      give your oppinions that what should I alter
-                      for better look
-                      <p>
-                        <a href=
-                        "mailto:harshrai.dps@gmail.com"><button class="cm">
-                        <a href=
-                        "mailto:harshrai.dps@gmail.com"></a><a href="mailto:harshrai.dps@gmail.com"></a><a href="mailto:harshrai.dps@gmail.com">CONTACT
-                        ME</a></button></a>
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="par3">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <center>
-                  <div style="background-color:black; width:90%;">
-                    <font class="part" style="font-size:60">I WANT
-                    TO TRAVEL WHOLE WORLD</font>
-                  </div>
-                </center>
-              </div><br />
-              <div>
-                <table class="foot">
-                  <tr>
-                    <td width="50%">
-                      <center>
-                        <h3>
-                          <span>HARSH RAI</span>
-                        </h3>
-                      </center>
-                    </td>
-                    <td>
-                      <h4>
-                        PLEASE FOLLOW ME:&nbsp;&nbsp; <a href=
-                        ""><img src="g+.png" width="25" height=
-                        "25" /><br />
-                        <br /></a> GIVE YOUR SUPPORT BY MAILING
-                        ME.<br />
-                        <br />
-                        A link to my school's Website
-                      </h4>
-                      <center>
-                        <a href="http://dpsbokaro.com/dpsi/" style=
-                        "text-decoration: none"><button class=
-                        "buth"><a href="http://dpsbokaro.com/dpsi/"
-                        style="text-decoration: none"></a><a href=
-                        "http://dpsbokaro.com/dpsi/" style=
-                        "text-decoration: none"></a><a href=
-                        "http://dpsbokaro.com/dpsi/" style=
-                        "text-decoration: none">DPS
-                        BOKARO</a></button></a>
-                      </center>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>
-        </table><script type="text/javascript">
-//<![CDATA[
-                        window.onscroll = function() {scrollFunction()};
+            <td width="10%"><center><button class="dir" onclick="plusSlides(+1)">
+            <img src="right.png" width=100% height=60%/></button></center></td>
+        </tr>
+            </table>
+        </center>
+        </td>
+        </tr>
+		<tr>
+		<td>
+		<div class="par1">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<center><div style="background-color:black; width:90%;"><font class="part">CODING IS MY PASSION</font></div></center>
+		</div>
+		<div class="skill" style="color:white">
+		<h1 style="font-size:50"><center>SKILLS</center></h1>
+		<br/>
+		<table width="100%" >
+		<tr>
+		<td width="50%">
+		<h2>C</h2>
+		<p align="center"><img src="c.jpg" width="80%" height="90%"/></p>
+		<br/>
+		</td>
+		<td width="50%">
+		<h2>HTML</h2>
+		<p align="center"><img src="html.png" width="70%" height="90%"/></p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2>C++</h2>
+		<p align="center"><img src="c++.png" width="75%" height="100%"/></p>
+		</td>
+		<td><h2>CSS</h2>
+		<p align="center"><img src="css.png" width="70%" height="100%"/></p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2>JAVA</h2>
+		<p align="center"><img src="java.png" width="70%" height="100%"/></p>
+		<br/>
+		</td>
+		<td>
+		<h2>JAVASCRIPT</h2>
+		<p align="center"><img src="js.jpg" width="60%" height="90%"/></p>
+		<br/>
+		</td>
+		</tr>
+		</table>
+		</div>
+		<div class="par2">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<center><div style="background-color:black; width:93%;"><font class="part" style="font-size:50">I DO MY WORK WITH PERFECTION</font></div></center>
+		</div>
+		<div>
+		<table width="100%" cellspacing="20">
+		<tr>
+		<td class="am" width="50%">
+		<h1 style="font-size:40">ABOUT ME</h1>
+		<font><center><p class="amp">NAME:&nbsp;&nbsp;HARSH RAI<br/>
+		SCHOOL:&nbsp;&nbsp;DPS<br/>
+		 E-MAIL ID for contact:&nbsp;&nbsp;
+		 <br/>hrai1942@gmail.com <br/> harshrai.dps@gmail.com</p></center></font>
+		 <p><a href="#kw"><button class="buth">WANT TO KNOW MORE..</button></a></p>
+		</td>
+		</tr>
+		<tr width="90%">
+		<td  class="con">
+		<h1 style="font-size:40">CONTACT ME</h1>
+		Please! contact me by doing mail  and give your oppinions that what should I alter for better look
+		<p><a href="mailto:harshrai.dps@gmail.com">
+		<button class="cm">CONTACT ME</button></a></p>
+		<font class="con"></font>
+		</td>
+		</tr>
+		</table>
+		</div>
+		<div class="par3">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<center><div style="background-color:black; width:90%;"><font class="part" style="font-size:60">I WANT TO TRAVEL WHOLE WORLD</font></div></center>
+		</div>
+		<br/>
+		<div>
+		<table class="foot">
+			<tr>
+		<td width="50%">
+		<span><center><H3>HARSH RAI</H3 ></center></span>
+		</td>
+		<td><h4>
+		PLEASE FOLLOW ME:&nbsp;&nbsp;
+		<a href="">
+		<img src="g+.png" width="25" height="25"/><br/><br/>
+		</a>
+		GIVE YOUR SUPPORT BY MAILING ME.<br/>
+		<br/>A link to my school's Website</h4>
+		<center><a href="http://dpsbokaro.com/dpsi/" style="text-decoration: none"><button class="buth">DPS BOKARO</button></a></center>
+		</td>
+		</tr>
+		</table>
+		</div>
+		</td>
+		
+		</tr>
+    </table>
+    <script>
+			window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000)
-                {
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000)
+		{
         document.getElementById("myBtn").style.display = "block";
-        }
-                else {
+    }
+		else {
         document.getElementById("myBtn").style.display = "none";
-        }
-        }
+    }
+}
 
 
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        }
-        var slideIndex =1;
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    var slideIndex =1;
         showSlides(slideIndex);
-
+        
         function plusSlides(n) {
           showSlides(slideIndex += n);
         }
-
+        
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
-
+        
         function showSlides(n) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
@@ -491,30 +295,34 @@
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
-        }
-                         wait()
-                         {
-                                
-                 }
-        //]]>
-        </script> <button onclick="topFunction()" id=
-        "myBtn"><img src="up.png" width="30" height=
-        "30" /></button> <script type="text/javascript">
-//<![CDATA[
-        var myVar;
+       }
+			 wait()
+			 {
+				
+		 }
+    </script>
+	
+	
+	
+	
 
-        function myFunction() {
-        myVar = setTimeout(showPage, 5000);
-        }
+		<button onclick="topFunction()" id="myBtn">
+			<img src="up.png" width="30" height="30"/>
+		</button>
+	
+		<script>
+var myVar;
 
-        function showPage() {
-        document.getElementById("loader").style.display = "none";
+function myFunction() {
+    myVar = setTimeout(showPage, 5000);
+}
 
-        document.getElementById("myDiv").style.display = "block";
-        }
-        //]]>
-        </script>
-      </div>
-    </div>
-  </body>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+   document.getElementById("HRpreloader").style.display = "none";
+
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
 </html>
